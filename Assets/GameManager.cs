@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
     public GameBoard gameBoard;
     public UIManager uiMan;
-    public int AscendCost = 1000;
+    public int AscendCost = 100;
 
     public int faith;
 
