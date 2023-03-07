@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public GameBoard gameBoard;
+    public CameraController cc;
     public UIManager uiMan;
     public int AscendCost = 100;
 
@@ -24,7 +25,7 @@ public class GameManager : MonoBehaviour {
         gameBoard.PlaceEntity(temp1);
         gameBoard.PlaceEntity(temp2);
         gameBoard.PlaceEntity(temp3);
-        Camera.main.GetComponent<CameraController>().CenterCamera();
+        cc.CenterCamera();
 
         faith = 0;
     }
