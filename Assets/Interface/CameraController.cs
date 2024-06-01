@@ -12,9 +12,9 @@ public class CameraController : MonoBehaviour {
 
     public void CenterCamera()
     {
-        transform.position = playerCharacter.transform.position;
-        transform.rotation = Quaternion.Euler(45, 0, 0);
-        transform.position -= transform.forward * 10;
+        //transform.position = playerCharacter.transform.position;
+        //transform.rotation = Quaternion.Euler(45, 0, 0);
+        //transform.position -= transform.forward * 10;
     }
 
     public void Zoom(float amount)
