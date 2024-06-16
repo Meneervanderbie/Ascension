@@ -7,6 +7,8 @@ public class InputManager : MonoBehaviour {
     public God playerCharacter;
     public CameraController cc;
 
+    public float rotateSpeed = 0.3f;
+
     void Start()
     {
         cc.playerCharacter = playerCharacter;
@@ -45,6 +47,14 @@ public class InputManager : MonoBehaviour {
                     playerCharacter.MoveToTarget(hit.transform.position);
                 }
             }
+        }
+
+        if(Input.GetButton("RotateLeft")){
+            //if()
+            cc.Rotate(rotateSpeed);
+        }
+        if(Input.GetButton("RotateRight")){
+            cc.Rotate(-rotateSpeed);
         }
     }
 
