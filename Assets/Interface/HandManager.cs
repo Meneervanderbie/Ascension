@@ -32,6 +32,7 @@ public class HandManager : MonoBehaviour
             GameObject temp = Instantiate(cardModel, handAnchor.transform, false);
             temp.transform.localPosition = curCardPos;
             temp.transform.rotation = tempQuat;
+            temp.AddComponent<Card>();
         }
         
     }
